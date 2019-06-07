@@ -20,6 +20,10 @@ document.getElementById('trivia-frances').style.display = 'none';
 document.getElementById('question-one-p').style.display = 'none';
 document.getElementById('question-two-p').style.display = 'none';
 document.getElementById('question-three-p').style.display = 'none';
+document.getElementById('question1frances').style.display = 'none';
+document.getElementById('question2frances').style.display = 'none';
+document.getElementById('question3frances').style.display = 'none';
+
 
 // Evaluar si se ingreso el nombre
 function sub() {
@@ -81,7 +85,7 @@ function evaluarPreguntaTresI() {
     let respuestaPreguntaTresISeleccionada = document.querySelector('input[name=pregunta3]:checked');
     
     if(respuestaPreguntaTresISeleccionada === null){
-        document.getElementById('alert-question3inglish').style.display = 'block';
+        document.getElementById('question3inglish').style.display = 'block';
     }else{
         let respuestaPreguntaTresIValor = document.querySelector('input[name=pregunta3]:checked').value;
 
@@ -106,7 +110,7 @@ function evaluarPreguntaUnoP() {
     let respuestaPreguntaUnoPSeleccionada = document.querySelector('input[name=pregunta1]:checked');
     
     if(respuestaPreguntaUnoPSeleccionada === null){
-        alert('Debe seleccionar una respuesta');
+        document.getElementById('question1frances').style.display = 'block';
     }else{
         let respuestaPreguntaUnoPValor = document.querySelector('input[name=pregunta1]:checked').value;
 
@@ -125,7 +129,7 @@ function evaluarPreguntaDosP() {
     let respuestaPreguntaDosPSeleccionada = document.querySelector('input[name=pregunta1]:checked');
     
     if(respuestaPreguntaDosPSeleccionada === null){
-        alert('Debe seleccionar una respuesta');
+        document.getElementById('question2frances').style.display = 'block';
     }else{
         let respuestaPreguntaDosPValor = document.querySelector('input[name=pregunta1]:checked').value;
 
@@ -144,7 +148,7 @@ function evaluarPreguntaTresP() {
     let respuestaPreguntaTresPSeleccionada = document.querySelector('input[name=pregunta1]:checked');
     
     if(respuestaPreguntaTresPSeleccionada === null){
-        alert('Debe seleccionar una respuesta');
+        document.getElementById('question3frances').style.display = 'block';
     }else{
         let respuestaPreguntaTresPValor = document.querySelector('input[name=pregunta1]:checked').value;
 
