@@ -126,12 +126,12 @@ function evaluarPreguntaUnoP() {
 }
 
 function evaluarPreguntaDosP() {
-    let respuestaPreguntaDosPSeleccionada = document.querySelector('input[name=pregunta1]:checked');
+    let respuestaPreguntaDosPSeleccionada = document.querySelector('input[name=pregunta2]:checked');
     
     if(respuestaPreguntaDosPSeleccionada === null){
         document.getElementById('question2frances').style.display = 'block';
     }else{
-        let respuestaPreguntaDosPValor = document.querySelector('input[name=pregunta1]:checked').value;
+        let respuestaPreguntaDosPValor = document.querySelector('input[name=pregunta2]:checked').value;
 
         if(respuestaPreguntaDosPValor === 'chien'){
             respuestasCorrectas = respuestasCorrectas + 1;
@@ -145,12 +145,12 @@ function evaluarPreguntaDosP() {
 }
 
 function evaluarPreguntaTresP() {
-    let respuestaPreguntaTresPSeleccionada = document.querySelector('input[name=pregunta1]:checked');
+    let respuestaPreguntaTresPSeleccionada = document.querySelector('input[name=pregunta3]:checked');
     
     if(respuestaPreguntaTresPSeleccionada === null){
         document.getElementById('question3frances').style.display = 'block';
     }else{
-        let respuestaPreguntaTresPValor = document.querySelector('input[name=pregunta1]:checked').value;
+        let respuestaPreguntaTresPValor = document.querySelector('input[name=pregunta3]:checked').value;
 
         if(respuestaPreguntaTresPValor === 'chat'){
             respuestasCorrectas = respuestasCorrectas + 1;
