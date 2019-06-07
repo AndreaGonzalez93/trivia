@@ -185,3 +185,8 @@ function goToFrances() {
     document.getElementById('resultado').style.display = 'none';
     triviaFrances()
 }
+
+// EJEMPLO EVENLISTENER
+
+let botonNombre=document.getElementById('guardar-nombre');
+botonNombre.addEventListener('click', sub);
