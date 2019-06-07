@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    padding-top: 50px; /*espacio superior del body*/
+    background: #C6FFDD;  /* fallback for old browsers  https://uigradients.com/#MegaTron    */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Roboto Slab', serif; /*https://fonts.google.com/?selection.family=Roboto+Slab */
+    color: rgb(60, 82, 100)
+}
+
+button{
+    margin-top: 30px;
+    padding: 5px;
+}
+
+h1{
+    color: rgb(173, 74, 152);
+}
+
+#resultado-correctas{
+    color: green;
+}
+
+#resultado-incorrectas{
+    color: red;
+}

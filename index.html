@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>trivia de idiomas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- fuente de la pagina -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+    <!-- Bloque para que usuario ingrese nombre -->
+    <div id="inicio">
+        <h1>Bienvenido a la Trivia</h1>
+            <p> 
+                <strong>¿Que esperas para divertirte mientras aprendes?</strong><br>
+                Portglish es una trivia donde podras poner a prueba tus conocimientos y aprender divirtiendote. 
+            </p>
+            <label for="nombre">ingresa tu nombre:</label><br>
+            <input type="text" name="Nombre" id="nombre" placeholder="ingresa tu nombre aqui"><br>
+            <div id="alert-name">Debes ingresar tu nombre</div>
+            <button type="button" value="Comenzar a jugar" onclick="sub()">Comenzar a Jugar</button>
+    </div>
+
+    <!-- Saludo y eleccion de idioma -->
+    <div id="bienvenida">
+        <h3 id="saludo"></h3>
+        <h3 id="pregunta">¿Que idioma te animas a elegir?</h3>
+        <button type="button" onclick="triviaInglish()">ingles</button>
+        <button type="button" onclick="triviaFrances()">frances</button>
+    </div>
+
+    <!-- Trivia en ingles -->
+    <div id="trivia-ingles">
+        <div id="question-one-i"> 
+            <h2>¿Como se dice casa?</h2>
+            <div id = "question1inglish">debes seleccionar una opcion</div>
+            <label><input type="radio" name="pregunta1" value="house"> house
+            <label><input type="radio" name="pregunta1" value="three"> three
+            <label><input type="radio" name="pregunta1" value="love"> love <br>
+            <button type="button" onclick="evaluarPreguntaUnoI()">siguiente</button>
+        </div>
+
+        <div id="question-two-i">
+            <h2>¿como se dice perro?</h2>
+            <div id = "question2inglish">debes seleccionar una opcion2</div>
+            <label><input type="radio" name="pregunta2" value="fish"> fish
+            <label><input type="radio" name="pregunta2" value="dog"> dog
+            <label><input type="radio" name="pregunta2" value="horse"> horse <br>
+            <button type="button" onclick="evaluarPreguntaDosI()">siguiente</button>
+        </div>
+
+        <div id="question-three-i">
+            <h2>¿como se dice ventana?</h2>
+            <div id = "question3inglish">debes seleccionar una opcion3</div>
+            <label><input type="radio" name="pregunta3" value="pencil"> pencil
+            <label><input type="radio" name="pregunta3" value="window"> window
+            <label><input type="radio" name="pregunta3" value="bug"> bug <br>
+            <button type="button" onclick="evaluarPreguntaTresI()">siguiente</button>
+        </div>
+    </div>
+
+    <!-- Trivia en Frances -->
+    <div id="trivia-frances">
+        <div id="question-one-p">
+            <h2>¿Como se dice casa?</h2>
+            <label><input type="radio" name="pregunta1" value="maison"> maison
+            <label><input type="radio" name="pregunta1" value="chaise"> chaise
+            <label><input type="radio" name="pregunta1" value="porte"> porte <br>
+            <button type="button" onclick="evaluarPreguntaUnoP()">siguiente</button>
+        </div>
+
+        <div id="question-two-p">
+            <h2>¿como se dice perro?</h2>
+            <label><input type="radio" name="pregunta1" value="chien"> chien
+            <label><input type="radio" name="pregunta1" value="vache"> vache
+            <label><input type="radio" name="pregunta1" value="perroquet"> perroquet <br>
+            <button type="button" onclick="evaluarPreguntaDosP()">siguiente</button>
+        </div>
+
+        <div id="question-three-p">
+            <h2>¿como se dice gato?</h2>
+            <label><input type="radio" name="pregunta1" value="chat"> chat
+            <label><input type="radio" name="pregunta1" value="lapin"> lapin
+            <label><input type="radio" name="pregunta1" value="chouette"> chouette <br>
+            <button type="button" onclick="evaluarPreguntaTresP()">siguiente</button>
+        </div>
+    </div>
+
+    <!-- Resultado de la trivia -->
+    <div id="resultado">
+        <h3>Tu resultado fue:</h3>
+        <h3>
+            <span id="resultado-correctas"></span><br>
+            <span id="resultado-incorrectas"></span>
+        </h3>
+        <p>¿Quieres volver a intentarlo?</p>
+        <button type="button" onclick="goToIngles()">Ingles</button>
+        <button type="button" onclick="goToFrances()">Frances</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
